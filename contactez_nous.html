@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="images/ongletsite.png">
+		<link rel="stylesheet" type="text/css" href="css/style_formu.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Les GAFAM</title>
+	</head>
+
+	<body>
+	<nav>
+		<div>
+			<a href="page_accueil.html">Accueil</a>
+		</div>
+		<div>
+			<div class="menu">
+				<a>Analyse</a>
+				<div class="sousmenupc">
+					<div><a href="page_pol.html">Politique</a></div>
+					<div><a href="page_soc.html">Socio-écologique</a></div>
+					<div><a href="page_economique.html">Economique</a></div>
+					<div><a href="acteur.html">Acteurs</a></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<a href="contactez_nous.html">Contact</a>
+		</div>
+		<div class="burger">
+			<img alt="Burger." src="images/burger.png">
+			<div id="menu_burger">
+				<div><a href="page_accueil.html">Accueil</a></div>
+				<div id="menu_deroulant">
+					<a>Notre Analyse</a>
+					<div id="sous_menu">
+						<div><a href="page_pol.html">Politique</a></div>
+						<div><a href="page_soc.html">Social</a></div>
+						<div><a href="page_economique.html">Economique</a></div>
+					</div>
+				</div>
+				<div><a href="acteur.html">Les acteurs</a></div>
+				<div><a href="contactez_nous.html">Contact</a></div>
+			</div>
+		</div>
+	</nav>
+		<header></header>
+
+		<article>
+			<h2>Une équipe au top!</h2>
+				<section>
+					<h3>
+					Cette page web de la controverse "Le modèle économique des GAFAM est-il éthique?" fût créé entièrement par le groupe S2 composé de :
+					</h3>
+					<div class="line_1">
+						<p>
+						- Lucas Jalbaud
+						</p>
+						<p>
+						- Hugo Siliveri
+						</p>
+
+						<p>
+						- Florian Pereau
+				
+						</p>
+					</div>
+					<div class="line_2">
+						<p>
+						- Chaïmae Asiamar
+						</p>
+						<p>
+						- Thibaud Grignon 
+						</p>
+
+					</div>
+					<p>
+					Notre groupe vous propose de nous contacter en remplissant le petit formulaire ci-dessous 
+					</p>
+
+					<p id="fleche_bas"><strong>↓ ↓ ↓</strong> 
+					</p>
+			</section>
+
+
+		<form action="Contact.php" method="post">
+			<fieldset>
+				<legend>Informations nécessaires</legend>
+
+				
+				<p>Prénom : 
+  				<input name="uname" type="text" placeholder="Lucas" required> *</p>
+
+  				<p>Nom :
+  				<input name="name" type="text" placeholder="Perreau" required> *</p>
+
+  				
+  				<p>Adresse mail :
+				<input type="email" name="email" placeholder="yourmail@domain.com" required> *</p>
+
+				
+				<p>Code postal :
+				<input name="code_postal" type="text" placeholder="03579" pattern="[0-9]{5}" required> *</p>
+
+				<p>Votre pays :
+				<select name="pays">
+    				<option value="fr">France</option>
+    				<option value="usa">U.S.A</option>
+    				<option value="chine">Chine</option>
+    				<option value="russie">Russie</option>
+				</select> </p>
+
+				<p>Date à laquelle vous souhaitez être recontacté :
+				<input type="date" name="dateRecontacte" required> *</p>
+
+		
+				<p>Vous avez entendu parlé de nous via ?
+				<select name="entendu_parlé">
+    				<option value="internet">Internet</option>
+    				<option value="catalogue">Catalogue</option>
+    				<option value="amis">Un amis</option>
+				</select> </p>
+
+				
+				<p>Commentaire - optionnel (150 charactères au maximum) :
+				<textarea name="message" maxlength="150"></textarea></p>
+
+				<input type="submit" value="Envoyer">
+
+
+			</fieldset>
+			
+		</form>
+	</article>
+
+	</body>
+
+
+
+
+	</html>

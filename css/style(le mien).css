@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Gotham;
+    src: url(./font/GothamBook.ttf)
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(./font/GothamBold.ttf)
+}
+
+@font-face {
+    font-family: GothamIt;
+    src: url(./font/GothamBookItalic.ttf)
+}
+
+body{
+    font-family: Gotham;
+    color: black;
+    margin: 0px;
+}
+
+header{
+    margin-top: 90px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EBEBEB;
+    padding: 0 20px;
+}
+
+aside{
+    background-color: whitesmoke;
+    border-top: solid darkgray;
+}
+nav{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    right:0;
+}
+  
+
+nav a, footer a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Gotham;
+    opacity: .8;
+    font-size: 20px;
+}
+  
+
+nav a:hover, footer a:hover {
+    background: #b1b1b1;
+    color: black;
+    opacity: 1;
+}
+  
+.navinte, .footinterieur{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+  
+a{
+    text-decoration: none;
+}
+article a:visited{
+    color: rgb(170, 74, 170);
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+    margin: 30px 10px;
+}
+
+figure > figcaption{
+    text-align: center;
+    color:#868180;
+    font-family: GothamIt;
+    margin-top: 10px;
+}
+
+figure > img{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height:50%;
+    max-width: 800px;
+    
+}
+
+cite, blockquote{
+    color:#797979;
+}
+
+footer{
+    overflow: hidden;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+
+header > h1{
+    font-size: 200%;
+}
+
+h1, h2, h3{
+    text-align: center;
+    font-family: GothamBold;
+}
+
+body::-webkit-scrollbar { /*Permet d'enlever la barre de navigation sur Chrome*/
+    display: none;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    right:0;
+  }
+  
+  .navbar a, footer p, #menu_deroulant > a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Gotham;
+    opacity: .8;
+    font-size: 20px;
+  }
+
+  
+  
+  .navbar a:hover, footer a:hover {
+    background: #b1b1b1;
+    color: black;
+    opacity: 1;
+  }
+  
+  .navinte, footer{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  
+  
+  .navinte, #menu_burger, #sous_menu {
+      display: none;
+  }
+  
+  .burger {
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 8%; 
+      left:0;
+  }
+  
+  .burger:hover > #menu_burger {
+      display: flex;
+      background-color: #666;
+      flex-direction: column;
+      position: fixed;
+      top: 8%;
+
+  }
+  
+  #menu_burger > div {
+      background-color: #333;
+      align-items: stretch;
+      flex-grow: 0;
+      width: 100%;
+  }
+  
+  #menu_burger > div/*:nth-child(even)*/ {
+      /*border-bottom: solid;*/
+      border-top: solid;
+  }
+  
+  .burger img {
+      height: 100%;
+  }
+  
+  
+footer > p{
+    margin: 0;
+    padding: 0;
+   
+}
+
+#menu_deroulant:hover > #sous_menu{
+    display: flex;
+    /*background-color: #666;*/
+    flex-direction: column;
+    position: static;
+    height: 50%;
+    width: 80%;
+    text-align: center;
+}
+
+
+  @media screen and (min-width: 920px) {
+      figure img {
+          width: 90%;
+      }
+  
+      .burger {
+          display: none;
+      }
+  
+      
+      .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          right:0;
+      }
+  
+     
+      .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-family: Gotham;
+          opacity: .8;
+          font-size: 20px;
+      }
+  
+  
+      .navbar a:hover {
+          background: #b1b1b1;
+          color: black;
+          opacity: 1;
+      }
+  
+      .navinte {
+          display: flex;
+          justify-content: space-evenly;
+      }  
+    body{
+        margin:0px 150px;
+    }
+      
+    header{
+        margin-top: 75px;
+    }
+      
+}

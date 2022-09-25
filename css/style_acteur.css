@@ -1,0 +1,68 @@
+
+section, #signature{
+  background-color: #333333;
+  margin:30px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.7);
+}
+
+section p,h3,h2,h3>a:visited,h3>a{
+  color:white;
+}
+/* signature de la personne qui à fait la page*/
+#signature{
+  color:white;
+  text-align: center;
+}
+article > h2, aside > h2{
+  color:black;
+}
+label{
+  cursor:pointer;
+}
+
+
+.caché {
+  position: absolute;
+  left: -100vw;
+}
+
+#divGoogle{
+  display:none;
+}
+
+#google:checked ~ #divGoogle{
+  display:block;
+}
+
+#divApple{
+  display:none;
+}
+
+#apple:checked ~ #divApple{
+  display:block;
+}
+
+#divAmazon{
+  display:none;
+}
+
+#Amazon:checked ~ #divAmazon{
+  display:block;
+}
+
+#divFacebook{
+  display:none;
+}
+
+#Facebook:checked ~ #divFacebook{
+  display:block;
+}
+
+#divMicrosoft{
+  display:none;
+}
+
+#Microsoft:checked ~ #divMicrosoft{
+  display:block;
+}

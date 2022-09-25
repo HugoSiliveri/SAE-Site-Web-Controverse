@@ -1,0 +1,286 @@
+/*police d'écriture*/
+@font-face {
+    font-family: Gotham;
+    src: url(../font/GothamBook.ttf)
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(../font/GothamBold.ttf)
+}
+
+@font-face {
+    font-family: GothamIt;
+    src: url(../font/GothamBookItalic.ttf)
+}
+
+@font-face{
+  font-family:"Gotham black";
+  src: url(../Font/Gotham-black.otf)
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Gotham;
+    color: black;
+    margin: 0px;
+}
+
+header{
+    margin-top: 90px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EBEBEB;
+    padding: 0 20px;
+}
+
+aside{
+    background-color: whitesmoke;
+    border-top: solid darkgray;
+}
+nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+nav a, footer a{
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Gotham;
+    font-size: 20px;
+  background-color: #333;
+}
+
+
+nav a:hover, footer a:hover {
+    background: #b1b1b1;
+    color: black;
+    opacity: 1;
+}
+
+.navinte, .footinterieur{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+}
+article a:visited{
+    color: rgb(170, 74, 170);
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+    margin: 30px 10px;
+}
+
+figure > figcaption{
+    text-align: center;
+    color:#868180;
+    font-family: GothamIt,"Arial I";
+    margin-top: 10px;
+}
+figure > img{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    height:50%;
+    max-width: 800px;
+
+}
+
+footer{
+    overflow: hidden;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+
+header > h1{
+    font-size: 200%;
+}
+/*aligner les titres*/
+h1, h2, h3{
+    text-align: center;
+    font-family: GothamBOLD,"Arial Black";
+}
+
+body::-webkit-scrollbar { /*Permet d'enlever la barre de navigation sur Chrome*/
+    display: none;
+}
+
+
+
+footer p{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Gotham;
+    opacity: .8;
+    font-size: 20px;
+  }
+
+
+  .navinte, footer{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+
+  .navinte, #menu_burger, #sous_menu {
+      display: none;
+  }
+
+  .burger {
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 10%;
+      left:0;
+  }
+
+  .burger:hover > #menu_burger {
+      display: flex;
+      /*background-color: #666;*/
+      flex-direction: column;
+      position: fixed;
+      height: 100%;
+      top: 10%;
+      width: 40%;
+      text-align: center;
+      font-size: xx-large;
+  }
+
+  #menu_burger > div {
+      background-color: #333;
+      align-items: stretch;
+      flex-grow: 0;
+      width: 100%;
+  }
+
+  #menu_burger > div {
+      border-top: solid;
+  }
+
+
+  .burger img {
+      height: 100%;
+      display: flex;
+  }
+
+
+footer > p{
+    margin: 0;
+    padding: 0;
+
+}
+
+#menu_deroulant:hover > #sous_menu{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    height: 50%;
+    width: 80%;
+}
+
+#menu_deroulant >p{
+    color:#f2f2f2;
+
+    margin: 0;
+}
+  @media screen and (min-width: 920px) {
+    figure img {
+      width: 55%;
+    }
+
+    .menu_deroulant {
+      width: 100%;
+    }
+
+    .burger {
+      display: none;
+    }
+
+
+    .navinte {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    body {
+      margin: 0px 150px;
+    }
+
+    header {
+      margin-top: 75px;
+    }
+  }
+
+.navinte >div{
+  width:100%;
+  background-color: #333333;
+}
+
+
+.sousmenupc{
+  display: none;
+}
+.sousmenupc:hover{
+  display: block;
+}
+.menu > a:hover + div{display: block;}
+
+
+nav >div{
+  position: relative;
+  display: inline;
+}
+
+
+nav div{
+  width: 100%;
+}
+
+.acteur img{
+  height: 100px;
+  width: auto;
+
+}
+
+#sous_menu{
+  text-align: left;
+}
+
+#signature{
+    color:black;
+    text-align: center;
+}
+
+.linkaccueil:visited{
+    text-decoration: none;
+    color:black;
+}
